@@ -9,6 +9,9 @@ body {
 } 
 /* header
 -------------------------------------------------- */
+.header {
+	height: auto;
+}
 #logo {
 	width: 100px;
 	height: 100px;	
@@ -18,7 +21,7 @@ h1 {
 	color:#474c49;
 }
 #socialmedia {
-	margin-top: -2.7em;
+	
 }
 /* nav-bar
 -------------------------------------------------- */
@@ -29,11 +32,7 @@ span {
 .navbar {
 	background-color:#f4a3a9;
 	text-align: center;		
-}
-
-a {
-	margin:2em;
-	font-size:1.2em;
+	
 }
 
 .navbtn1 {
@@ -41,6 +40,14 @@ a {
 }
 /* main
 -------------------------------------------------- */
+.row {
+	margin:auto;
+	text-align: center;
+}
+.expression {
+	margin:auto;
+	text-align:center;
+}
 .popular {
 	background-color: #7cc3c7;
 	margin-top:-1em;
