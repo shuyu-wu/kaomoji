@@ -73,6 +73,8 @@ $(document).ready(function() {
 
   $(".popular .popularjs").html(a1)
 //navbar 
+
+  // TODO: change the repetitive click events into a loop
 	$("#navsad").click(function() {
       var top = $(".sad").offset().top
       $('html,body').animate({ scrollTop: top }, 'slow');
@@ -101,6 +103,8 @@ $(document).ready(function() {
 	        scrollTop: $(".others").offset().top},
 	        'slow');
 	});
+
+
 //hover on content
   $('.ascii span').on('mouseenter', function () {
       $(this).css('color', '#f39c12');
