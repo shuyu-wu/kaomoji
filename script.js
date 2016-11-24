@@ -67,43 +67,65 @@ var generateContent = function(){
 }
 
 
+
+var navclick = function() {
+	var nav = [{
+		navbutton:`#navsad`,
+		content:`.sad`
+	},{
+		navbutton:`#navhappy`,
+		content:`.happy`
+	},{
+		navbutton:`#navcute`,
+		content:`.cute`
+	},{
+		navbutton:`#navangry`,
+		content:`.angry`
+	},{
+		navbutton:`#navother`,
+		content:`.others`
+	},{
+		navbutton:`#navpopular`,
+		content:`.popular`
+	}];	
+	for (var i=0;i<nav.length;i++) {
+		$(nav[i].navbutton).click(function() {
+			 var jump = $(this).attr("jump");
+			 console.log(jump)
+			var top = $("."+jump).offset().top
+		    $('html,body').animate({
+		      scrollTop: top-20
+		    }, 'slow');
+		});
+	}
+}
+
+
+
 $(document).ready(function() {
 //content generating for popular section
+  
   var a1 = generateContent()
 
   $(".popular .popularjs").html(a1)
+
+  
+
+
 //navbar 
 
+	$(window).scroll(function () { 
+       
+    if ($(window).scrollTop() > 160) {
+      $('#navbar1').addClass('navbar-fixed');
+    }
+    else {
+      $('#navbar1').removeClass('navbar-fixed');
+    }
+  });
   // TODO: change the repetitive click events into a loop
-	$("#navsad").click(function() {
-      var top = $(".sad").offset().top
-      $('html,body').animate({ scrollTop: top }, 'slow');
-	});
-
-	$("#navhappy").click(function() {
-	    $('html,body').animate({
-	      scrollTop: $(".happy").offset().top
-	    }, 'slow');
-	});
-
-	$("#navcute").click(function() {
-	    $('html,body').animate({
-	      scrollTop: $(".cute").offset().top
-	    }, 'slow');
-	});
-
-	$("#navangry").click(function() {
-	    $('html,body').animate({
-	        scrollTop: $(".angry").offset().top},
-	        'slow');
-	});
-
-	$("#navother").click(function() {
-	    $('html,body').animate({
-	        scrollTop: $(".others").offset().top},
-	        'slow');
-	});
-
+	
+  navclick();
 
 //hover on content
   $('.ascii span').on('mouseenter', function () {
