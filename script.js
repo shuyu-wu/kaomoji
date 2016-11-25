@@ -66,8 +66,6 @@ var generateContent = function(){
   return a; 
 }
 
-
-
 var navclick = function() {
 	var nav = [{
 		navbutton:`#navsad`,
@@ -106,9 +104,6 @@ $(document).ready(function() {
   var a1 = generateContent()
 
   $(".popular .popularjs").html(a1)
-
-  
-
 
 //navbar 
 

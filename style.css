@@ -8,15 +8,12 @@ body {
 .header {
 	height: auto;
 }
-
 #logo {
 	height:auto;
 }
-
 .socialmedia {
 	background-color: #ffffff;
 }
-
 .share {
 	padding-top:1em;
 }
@@ -27,27 +24,25 @@ span {
 	font-size: 1.2em;
 	vertical-align: middle;
 }
-
 .nav-text {
 	color:#ffffff;
 }
 #navbar1 {
 	background-color:#e74c3c;
 	text-align: center;	
-	
 	*position: relative;
-  *z-index: 2;
-  padding-top:20px;
-  padding-bottom:20px;
-  overflow: visible;
-
+  	*z-index: 2;
+  	padding-top:20px;
+  	padding-bottom:20px;
+  	overflow: visible;
 }
 .navbtn1 {
 	margin-right: 20px;
+	margin-bottom: 1em;
+	margin-top: 1em;
 	vertical-align: middle;
 	background-color: #ffffff;
 }
-
 .navbar-fixed {
     top: 0;
     z-index: 100;
@@ -57,13 +52,17 @@ span {
 /* main
 -------------------------------------------------- */
 .row {
-	margin:auto;
+	margin-left:0 !important;
+	margin-right:0 !important;
 	text-align: center;
 }
 .expression {
 	margin-bottom:1em;
 	text-align:center;
 	color:#444444;
+}
+.ascii {
+	margin-bottom: 0;
 }
 .popular {
 	padding-bottom: 2em;
@@ -98,7 +97,6 @@ span {
 	padding: 1.2em 0 1.2em 0;
 	color:#e74c3c;
 }
-
 .floatybox div {
 	display: inline-block;
 	vertical-align: top;
