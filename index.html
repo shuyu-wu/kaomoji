@@ -6,8 +6,6 @@
   <title>Kaomoji</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="assets/css/bootstrap.css" />
-  <!-- <link rel="stylesheet" href="assets/fa/css/font-awesome.css" /> -->
   <link rel="stylesheet" href="assets/fa/css/font-awesome.min.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -18,36 +16,36 @@
     <div class="row">
       <img id="logo" class="col-xs-6 col-sm-4 col-md-3" src="http://img1.imagehousing.com/0/angel-690124.jpg" alt="Kaomoji"/>
       <div class="col-xs-12 col-sm-2 pull-right pull">
-        <h5>分享到：</h5>
-        <button class="btn btn-default btnReload" id="facebook">
-          <i class="fa fa-facebook-square"></i>
+        <h5 class="share">分享到：</h5>
+        <button class="btn btn-default btnReload socialmedia" id="facebook">
+          <i class="fa fa-facebook-square fa-2x"></i>
         </button>
-        <button class="btn btn-default btnReload" id="twitter">
-          <i class="fa fa-twitter"></i>
+        <button class="btn btn-default btnReload socialmedia" id="twitter">
+          <i class="fa fa-twitter fa-2x"></i>
         </button>
       </div>
     </div>
   </div>
   <!--navbar-->
   <div id="navbar1" class="nav1">
-    <span class="nav-text">寻找你需要的 <i class="fa fa-search" aria-hidden="true"></i></span>
-    <button class="btn btn-default navbtn1" id="navpopular" jump="popular">常用</button>
-    <button class="btn btn-default navbtn1" id="navhappy" jump="happy">高兴</button>
-    <button class="btn btn-default navbtn1" id="navsad" jump="sad">悲伤</button>
-    <button class="btn btn-default navbtn1" id="navcute" jump="cute">卖萌</button>
-    <button class="btn btn-default navbtn1" id="navangry" jump="angry">生气</button>
-    <button class="btn btn-default navbtn1" id="navother" jump="others">其他</button>
+    <span class="nav-text">寻找你需要的   <i class="fa fa-search" aria-hidden="true"></i></span>
+    <button class="btn btn-default navbtn1" id="navpopular" jump="popular"><strong>常用</strong></button>
+    <button class="btn btn-default navbtn1" id="navhappy" jump="happy"><strong>高兴</strong></button>
+    <button class="btn btn-default navbtn1" id="navsad" jump="sad"><strong>悲伤</strong></button>
+    <button class="btn btn-default navbtn1" id="navcute" jump="cute"><strong>卖萌</strong></button>
+    <button class="btn btn-default navbtn1" id="navangry" jump="angry"><strong>生气</strong></button>
+    <button class="btn btn-default navbtn1" id="navother" jump="others"><strong>其他</strong></button>
   </div>
   <!--main-->
   <div class="main">
   <!--I have written this party in js-->
     <div class="popular"> 
-        <h2><i class="fa fa-arrows-alt" aria-hidden="true"></i> 常用</h2>
+        <h2 class="title1"><i class="fa fa-arrows-alt" aria-hidden="true"></i> 常用</h2>
       <div class="popularjs">
       </div>
     </div>
     <div class="happy">
-      <h2><i class="fa fa-smile-o" aria-hidden="true"></i> 高兴</h2>
+      <h2 class="title1"><i class="fa fa-smile-o" aria-hidden="true"></i> 高兴</h2>
       <div class="row">
         <div class="col-md-1"></div>
         <div class="expression col-xs-12 col-sm-6 col-md-2">
@@ -122,7 +120,7 @@
       </div>
     </div>
     <div class="sad">
-      <h2><i class="fa fa-frown-o" aria-hidden="true"></i> 悲伤</h2>
+      <h2 class="title1"><i class="fa fa-frown-o" aria-hidden="true"></i> 悲伤</h2>
       <div class="row">
         <div class="col-md-1"></div>
         <div class="expression col-xs-12 col-sm-6 col-md-2">
@@ -197,7 +195,7 @@
       </div>
     </div>
     <div class="cute">
-      <h2><i class="fa fa-heart" aria-hidden="true"></i> 卖萌</h2>
+      <h2 class="title1"><i class="fa fa-heart" aria-hidden="true"></i> 卖萌</h2>
       <div class="row">
         <div class="col-md-1"></div>
         <div class="expression col-xs-12 col-sm-6 col-md-2">
@@ -272,7 +270,7 @@
       </div>
     </div>
     <div class="angry">
-      <h2><i class="fa fa-fire-extinguisher" aria-hidden="true"></i> 生气</h2>
+      <h2 class="title1"><i class="fa fa-fire-extinguisher" aria-hidden="true"></i> 生气</h2>
       <div class="row">
         <div class="col-md-1"></div>
         <div class="expression col-xs-12 col-sm-6 col-md-2">
@@ -347,7 +345,7 @@
       </div>
     </div>
     <div class="others">
-      <h2><i class="fa fa-plus" aria-hidden="true"></i> 其他</h2>
+      <h2 class="title1"><i class="fa fa-plus" aria-hidden="true"></i> 其他</h2>
       <div class="row">
         <div class="col-md-1"></div>
         <div class="expression col-xs-12 col-sm-6 col-md-2">
@@ -427,7 +425,9 @@
     
       <div class="row">
         
-          <p class="col-xs-12 col-md-6 col-xl-4">Copyright © Shuyu Wu, All Rights Reserved.<a href="shuyuwusw@gmail.com">联系作者</a></p>
+          <p class="col-xs-12 col-md-6 col-xl-6">Copyright © Shuyu Wu, All Rights Reserved.
+            <i class="fa fa-github"></i>
+          </p>
        
       </div>
     

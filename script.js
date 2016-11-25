@@ -100,8 +100,6 @@ var navclick = function() {
 	}
 }
 
-
-
 $(document).ready(function() {
 //content generating for popular section
   

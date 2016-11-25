@@ -12,6 +12,14 @@ body {
 #logo {
 	height:auto;
 }
+
+.socialmedia {
+	background-color: #ffffff;
+}
+
+.share {
+	padding-top:1em;
+}
 /* nav-bar
 -------------------------------------------------- */
 span {
@@ -19,8 +27,12 @@ span {
 	font-size: 1.2em;
 	vertical-align: middle;
 }
+
+.nav-text {
+	color:#ffffff;
+}
 #navbar1 {
-	background-color:#f4a3a9;
+	background-color:#e74c3c;
 	text-align: center;	
 	
 	*position: relative;
@@ -33,6 +45,7 @@ span {
 .navbtn1 {
 	margin-right: 20px;
 	vertical-align: middle;
+	background-color: #ffffff;
 }
 
 .navbar-fixed {
@@ -48,44 +61,42 @@ span {
 	text-align: center;
 }
 .expression {
-	margin:auto;
+	margin-bottom:1em;
 	text-align:center;
+	color:#444444;
 }
 .popular {
-	background-color: #7cc3c7;
-	margin-top:-1em;
 	padding-bottom: 2em;
+	background-color: #eeeeee;
 }
 .happy {
-	background-color:#259ba3;
 	margin-top:-1em;
 	padding-bottom: 2em;
 }
 .sad {
-	background-color:#218b92;
 	margin-top:-1em;
 	padding-bottom: 2em;
+	background-color: #eeeeee;
 }
 .cute {
-	background-color:#1d7c82;
 	margin-top:-1em;
 	padding-bottom: 2em;
 }
 .angry {
-	background-color:#196c72;
 	margin-top:-1em;
 	padding-bottom: 2em;
+	background-color: #eeeeee;
 }
 .others {
-	background-color:#165d61;
 	margin-top:-1em;
 	padding-bottom: 2em;
 }
-h2 {
+.title1 {
 	font-family: sans-serif !important;
 	text-align:center;
 	margin:auto;
 	padding: 1.2em 0 1.2em 0;
+	color:#e74c3c;
 }
 
 .floatybox div {
