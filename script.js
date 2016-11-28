@@ -89,7 +89,7 @@ var navclick = function() {
 	for (var i=0;i<nav.length;i++) {
 		$(nav[i].navbutton).click(function() {
 			 var jump = $(this).attr("jump");
-			 console.log(jump)
+			 
 			var top = $("."+jump).offset().top
 		    $('html,body').animate({
 		      scrollTop: top-20
@@ -107,7 +107,7 @@ $(document).ready(function() {
 
 //navbar 
 
-	$(window).scroll(function () { 
+  $(window).scroll(function() { 
        
     if ($(window).scrollTop() > 160) {
       $('#navbar1').addClass('navbar-fixed');
